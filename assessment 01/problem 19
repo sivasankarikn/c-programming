@@ -1,0 +1,9 @@
+//get a three digit number from the user, make the one's digit 2 and then print it
+#include <stdio.h>
+int main() {
+    int a,u,t,h,n;
+    scanf("%d",&a);
+    n=a/10*10+2;
+    printf("%d",n);
+    return 0;
+}
