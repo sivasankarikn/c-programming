@@ -1,0 +1,11 @@
+//Get a four-digit number from user and only reverse the last two digits of the number, then print the number.
+#include <stdio.h>
+int main() {
+    int a,u,t,h,n;
+    scanf("%d",&a);
+    h=a/100;
+    u=a%100;
+    n=(h%10*10+h/10)*100;
+    printf("%d",n+u);
+    return 0;
+}
