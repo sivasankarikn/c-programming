@@ -1,0 +1,9 @@
+//get a two digit number from the user and print the sum of the digits
+#include <stdio.h>
+int main() {
+    int a,u,t,n;
+    scanf("%d",&a);
+    u=a%10+a/10;
+    printf("%d",u);
+    return 0;
+}
