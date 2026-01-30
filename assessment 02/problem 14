@@ -1,0 +1,10 @@
+//Get a four-digit number from the user and check if the first two digits and last two digits are the same. If yes, print 1, otherwise print 0.
+#include <stdio.h>
+int main() {
+    int a,u,t;
+    scanf("%d",&a);
+    u=a%100;
+    t=a/100;
+    printf("%d",u==t);
+    return 0;
+}
