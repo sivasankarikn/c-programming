@@ -1,0 +1,10 @@
+//Get a two-digit number from the user and check if the digits 1 is less than or equal to digit 0. If yes, print one, otherwise print zero.
+#include <stdio.h>
+int main() {
+    int a,u,t;
+    scanf("%d",&a);
+    u=a%10;
+    t=a/10;
+    printf("%d",u<=t);
+    return 0;
+}
