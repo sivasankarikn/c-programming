@@ -1,0 +1,11 @@
+//Get a three-digit number from the user and make the tens digit as zero, then print it
+#include <stdio.h>
+int main() {
+    int a,u,t,h,n;
+    scanf("%d",&a);
+    h=a/100;
+    u=a%10;
+    n=h*100+u;
+    printf("%d",n);
+    return 0;
+}
