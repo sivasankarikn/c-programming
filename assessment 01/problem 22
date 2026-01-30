@@ -1,0 +1,10 @@
+//get a number from the user and subtract 5 from that number if the number's ten's position is odd, then print the result. do not use 'if'
+#include <stdio.h>
+int main() {
+    int a,u,t,h,n;
+    scanf("%d",&a);
+    t=a/10%10;
+    n=a-5*(t%2);
+    printf("%d",n);
+    return 0;
+}
