@@ -1,0 +1,12 @@
+//get a three digit number from the user and print the reverse of the number
+#include <stdio.h>
+int main() {
+    int a,u,t,h,n;
+    scanf("%d",&a);
+    u=a%10;
+    t=(a/10)%10;
+    h=a/100;
+    n=u*100+t*10+h;
+    printf("%d",n);
+    return 0;
+}
