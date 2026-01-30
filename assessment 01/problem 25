@@ -1,0 +1,11 @@
+//Get a three-digit number from user. If the sum of the digits is less than 10, then print the sum. Otherwise, add the digits of the sum. If the sum of the digits is less than 10, then print the sum. Otherwise, add the digits of the sum and print the sum.
+#include <stdio.h>
+int main() {
+    int a,u,t,h,n;
+    scanf("%d",&a);
+    u=(a%10)+((a/10)%10)+(a/100);
+    t=(u%10)+(u/10);
+    h=(t%10)+(t/10);
+    printf("%d",h);
+    return 0;
+}
