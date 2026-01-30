@@ -1,0 +1,12 @@
+//get a four digit number from the user and only reverse the first two digits of the number ,then print the number
+#include <stdio.h>
+int main() {
+    int a,u,t,h,n;
+    scanf("%d",&a);
+    u=a%10;
+    t=(a/10)%10;
+    h=u*10+t;
+    n=a/100*100;
+    printf("%d",n+h);
+    return 0;
+}
