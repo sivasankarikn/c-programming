@@ -1,0 +1,15 @@
+//write a loop program to print sum of 1 to 5
+#include <stdio.h>
+
+int main() {
+    int i = 5,s=0;
+
+START:
+    s=s+i;
+    i--;
+
+    if (i >0 )
+        goto START;
+printf("%d",s);
+    return 0;
+}
