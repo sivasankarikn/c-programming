@@ -1,0 +1,15 @@
+//write a loop program to print sum of 6 to 1
+#include <stdio.h>
+
+int main() {
+    int i = 6,s=0;
+
+START:
+    s=s+i;
+    i--;
+
+    if (i >0 )
+        goto START;
+printf("%d",s);
+    return 0;
+}
