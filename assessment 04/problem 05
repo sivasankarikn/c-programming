@@ -1,0 +1,17 @@
+//write a loop program to print odd number between 1 and 9
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+
+START:
+    if (i > 9)
+        goto END;
+
+    printf("%d\n", i);
+    i = i + 2;
+    goto START;
+
+END:
+    return 0;
+}
