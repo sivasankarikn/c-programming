@@ -1,0 +1,18 @@
+//write a program to get a number from user and print the reverse of that number
+#include <stdio.h>
+int main() {
+    int n, c=0,a;
+    scanf("%d", &n);
+    if (n == 0) {
+        goto END;
+    }
+START:
+    if (n == 0)
+        goto END;
+    a= n %10;
+    printf("%d",a);
+    n=n/10;
+    goto START;
+END:
+    return 0;
+}
