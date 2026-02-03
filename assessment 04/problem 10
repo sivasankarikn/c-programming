@@ -1,0 +1,15 @@
+//write a loop program to print the sum of two digit odd numbers, whose ten's digit is 7
+#include <stdio.h>
+int main() {
+    int i = 71;
+    int sum = 0;
+START:
+    if (i >= 80)
+        goto END;
+    sum = sum + i;
+    i = i + 2;
+    goto START;
+END:
+    printf("Sum = %d", sum);
+    return 0;
+}
