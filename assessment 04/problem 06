@@ -1,0 +1,16 @@
+//write a loop program to print the two digit odd numbers below 20
+#include <stdio.h>
+int main() {
+     int i = 11;
+
+START:
+    if (i >= 20)
+        goto END;
+
+    printf("%d\n", i);
+    i = i + 2;
+    goto START;
+
+END:
+    return 0;
+}
