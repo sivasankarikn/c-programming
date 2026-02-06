@@ -1,1 +1,37 @@
 //write a program to get a number from user and interchange the first and last digits and print the result
+#include <stdio.h>
+int main() {
+    int n, temp, first, last, digits = 0, pow10 = 1, result;
+    scanf("%d", &n);
+    temp = n;
+    /* Count digits */
+COUNT:
+    if (temp == 0)
+        goto DONE_COUNT;
+    digits++;
+    temp = temp / 10;
+    goto COUNT;
+
+DONE_COUNT:
+    temp = n;
+    last = temp % 10;
+FIRST:
+    if (temp < 10)
+        goto DONE_FIRST;
+    temp = temp / 10;
+    goto FIRST;
+
+DONE_FIRST:
+    first = temp;
+POWER:
+    if (digits <= 1)
+        goto DONE_POWER;
+    pow10 = pow10 * 10;
+    digits--;
+    goto POWER;
+
+DONE_POWER:
+    result = last * pow10 + (n % pow10) / 10 * 10 + first;
+    printf("%d", result);
+    return 0;
+}
