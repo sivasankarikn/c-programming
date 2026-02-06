@@ -1,0 +1,15 @@
+//write a program get number from the user print whether that number is prime or not
+#include <stdio.h>
+int main(){
+int a,t=0,c=1;
+scanf("%d",&a);
+count:
+if(c>a)goto done;
+if(a%c==0)t++;
+c++;
+goto count;
+done:
+if(t==2)printf("prime");
+else printf("not prime");
+return 0;
+}
